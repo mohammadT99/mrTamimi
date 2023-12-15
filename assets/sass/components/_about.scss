@@ -1,0 +1,42 @@
+.about {
+
+    .about__title {
+        text-align: right;
+       h1{
+        font-size: 34px;
+        font-weight: 700;
+       }
+       span {
+        font-size: 22px;
+        font-weight: 700;
+       }
+    }
+    .about__body {
+        padding: 74px 0;
+        .about__body__text {
+            font-size: 24px;
+            color:$secondary;
+            font-weight: 700;
+            line-height: 32px;
+        }
+    }
+}
+
+// about section Home  styles
+
+.about__body__home {  
+    margin-top: 70px;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 77px;
+    .about__body__home__text {
+        font-size: 24px;
+        color: #8A8A8A;
+        line-height: 32px;
+        font-weight: 900;
+    }
+
+}
+

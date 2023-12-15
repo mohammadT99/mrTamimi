@@ -1,0 +1,77 @@
+.plans__section {
+    padding-top: 100px;
+    span {
+        font-size: 24px;
+        font-weight: 500;
+
+    }
+    .plans__title__text {
+        font-size: 32px;
+        font-weight: 900;
+
+    }
+}
+
+//==========  plans --card ======================= //
+
+.plans__crads {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 72px;
+    .plans__crads__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+}
+.plans__card {
+    padding: 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 20px 20px 0px rgba(0, 0, 0, 0.10);
+    .plans__card__title {
+        padding-top:35px ;
+        padding-bottom:23px ;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .plans__card__title__text {
+            font-size: 35px;
+            font-weight: 900;
+            padding-bottom:16px 
+            ;
+        }
+    }
+}
+.plans__card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.plans__crad__body__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.plans__card__rigth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+}
+

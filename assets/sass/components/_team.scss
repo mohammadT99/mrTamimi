@@ -1,0 +1,53 @@
+.team {
+    .team__title {
+        .team__title__text {
+            font-size: 34px;
+            font-weight: 900;
+            color: $black;
+        }
+    }
+}
+
+.team__body {
+    padding: 74px 0;
+    display: flex;
+}
+
+
+
+// ------------ our team card__team-------------//
+.team__card {
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    padding: 14px 42px;
+    // justify-content: center;
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 5px 20px 20px 0px rgba(0, 0, 0, 0.10);;
+    .team__card__img {
+        width: 138px;
+        height: 134px;
+    }
+    .team__card__body__title {
+        font-size: 24px;
+        font-weight: 900;
+        color: $black;
+        white-space: nowrap;
+    }
+    .team__crad__body__desc {
+        padding-top:16px;
+        color:$black;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .team__card__body__icon {
+        padding-top:8px ;
+        display: flex;
+        justify-content: flex-end;
+        .team__card__body__icon__img {
+            height:28px;
+            width: 28px;
+        }
+    }
+}
