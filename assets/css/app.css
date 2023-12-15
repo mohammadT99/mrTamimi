@@ -872,4 +872,70 @@ body {
   text-align: center;
 }
 
+.input-group {
+  margin-top: 70px;
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  border-radius: 10px;
+}
+.input-group input {
+  padding: 8px 14px;
+  border: 0;
+  outline: 0;
+}
+.input-group .label-group {
+  position: absolute;
+  top: -12px;
+  left: 15px;
+  background-color: white;
+  padding: 0 10px;
+}
+
+.signin__content {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 92px;
+}
+
+.signin__content__left {
+  padding: 100px;
+}
+.signin__content__left .signin__content__left__title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 120px;
+  gap: 12px;
+}
+.signin__content__left .signin__content__left__title h1 {
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 32px;
+}
+
+.signin__content__left__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.signin__content__left__content .signin__content__left__content__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-wrap: nowrap;
+}
+.signin__content__left__content .signin__content__left__content__title h1 {
+  font-size: 42px;
+  font-weight: 900;
+}
+.signin__content__left__content .signin__content__left__content__title p {
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 900;
+}
+
 /*# sourceMappingURL=app.css.map */
