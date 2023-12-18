@@ -1,9 +1,17 @@
-.input-group {
+.form-group  {
     margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.input-group {
     position: relative;
     border: 1px solid #ccc;
     padding: 10px 14px;
     border-radius:10px ;
+    display: flex;
+    justify-content: space-between;
+    width: 415px;
     input {
         padding: 8px 14px;
         border: 0;

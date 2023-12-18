@@ -264,4 +264,39 @@
 .tx-white {
   color: #fff;
 }
+.tx-black {
+  color: #000 !important;
+}
 
+.tx-gray {
+  color: #ccc;
+}
+
+.tx-16 {
+  font-size: 16px !important;
+  font-weight: 500;
+}
+
+.tx-black__10 {
+  color: rgba(0, 0, 0, 0.60);
+}
+
+
+//  ========================== bg ================== //
+.bg-red {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12) 19.51%, rgba(255, 255, 255, 0.12) 81.71%), #D25487;
+}
+
+
+// ======================== border ======================== //
+.border  {
+  border: 1.5px solid #E2E2E8;
+}
+
+.border-roted {
+  border: 1px dashed #ccc;
+}
+
+.border-none {
+  border: none !important;
+}

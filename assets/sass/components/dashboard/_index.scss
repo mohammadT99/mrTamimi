@@ -1,0 +1,234 @@
+.root {
+    display: flex;
+    // width: 100vh;
+    height: 100vh;
+    // justify-content: flex-start;
+}
+
+.content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+// content header
+.content__header {
+    display: flex;
+    justify-content: space-between;
+    // width: 100%;
+}
+
+.content__header__title {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    h1 {
+        font-size: 42px;
+        font-weight: 900;
+        line-height: normal;
+    }
+    span {
+        font-size: 18px;
+        font-weight:700 ;
+        color: #8A8A8A;
+    }
+}
+
+.content__header__icons {
+    display: flex;
+    justify-content:center;
+    // align-items: center;
+    gap: 14px;
+    .content__header__icons__date {
+        font-size: 14px;
+        font-weight: 500;
+    }
+}
+// content wallets
+
+.content__wallets {
+    padding-top:45px;
+    display: flex;
+    flex-direction: column;
+    .content__wallets__title {
+        span {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
+
+//  ========================= cards wallets ============== //
+.content__wallets__cards {
+    padding-top:14px ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    
+}
+
+.wallets__card {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    gap: 22px;
+    border-radius: 10px;
+    .wallets__card__content {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        gap: 8px;
+        align-items: flex-start;
+        .wallets__card__title {
+            font-size: 22px;
+            font-weight: 900;
+            line-height: normal;
+            text-align: left;
+        }
+        .wallets__card__namad {
+            display: flex;
+            justify-content:flex-start;
+            gap: 40px;
+        }
+    }
+}
+
+.wallets__card__add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 18px 38px;
+}
+
+// ======================== charts ==================== //
+
+.content__chrat {
+    padding-top: 40px;
+    .content__chart__title {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+
+
+// ================================ data tabel ================== //
+
+.content__data {
+    margin-top: 60px;
+    display: flex;
+    gap: 60px;
+    .content__data__body {
+        display: flex;
+        flex-direction:column;
+        gap: 8px;
+        padding: 4px 0;
+        padding-right:60px;
+        border-right: 1px solid #aaa;
+        text-align: left;
+
+        h1 {
+            font-size: 18px ;
+            font-weight: 700;
+        }
+        span {
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+}
+
+
+// =============================== tabel content =================== //
+
+.content__tabel__header {
+    margin-top:80px ;
+    display : flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom:1px solid #ccc ;
+
+    .content__tabel__header {
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+    }
+    .content__tabel__header__left  {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 8px;
+        p {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        span {
+            svg {
+                vertical-align: top;
+            }
+        }
+    }
+}
+
+.content__tabel__header__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    p{
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.content__tabel__today {
+    margin-top: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    .content__tabel__today__header {
+        h1 {
+            font-size: 24px ;
+            font-weight: 700;
+        }
+    }
+}
+
+
+//  ===================== style tabel =================== //
+.tabel__today {
+    margin-top:48px ;
+    display: flex;
+    // flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 24px;
+    
+}
+
+.tabel__today__column {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // gap: 100px;
+    padding-bottom:8px ;
+    border-bottom: 1px solid #aaa;
+}
+
+.tabel__today__column__left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+}
+
+.tabel__today__column__right {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 40px;
+}
