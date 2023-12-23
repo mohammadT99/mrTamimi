@@ -297,7 +297,7 @@ body {
 }
 
 .tx-bg-white {
-  color: #fff !important; 
+  color: #fff;
 }
 
 .nav-link {
@@ -471,6 +471,10 @@ body {
 
 .align-center {
   align-items: center;
+}
+
+.bg-blue {
+  background: rgba(63, 127, 224, 0.2);
 }
 
 .owl-carousel .owl-nav button {
@@ -1435,6 +1439,38 @@ body {
 }
 .setting__profile__google__bottom span {
   color: #8A8A8A;
+}
+
+.headers__tickets {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.headers__tickets .headers__tickets__h1 h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.headers__tickets__crads {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ticket__card {
+  padding: 18px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ticket__card .ticket__card__img {
+  position: relative;
+}
+.ticket__card .ticket__card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 /*# sourceMappingURL=app.css.map */

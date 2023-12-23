@@ -1,0 +1,38 @@
+.headers__tickets {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    .headers__tickets__h1 {
+        h1 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
+
+.headers__tickets__crads {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+
+}
+.ticket__card {
+    padding: 18px;
+    border-radius: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+    .ticket__card__img {
+        position: relative;
+        .img__side {
+            
+        }
+    }
+    .ticket__card__content {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
