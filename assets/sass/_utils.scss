@@ -123,7 +123,7 @@
  }
 
  .tx-bg-white{
-    color: $white;
+    color:#fff!important;
  }
  .nav-link {
   text-decoration: none;
@@ -261,8 +261,12 @@
 .mt-2 {
   margin-top: 14px;
 }
+// ==================== text styles ===========//
 .tx-white {
   color: #fff;
+}
+.tx-blue {
+  color:#4183E6 ;
 }
 .tx-black {
   color: #000 !important;
@@ -307,5 +311,15 @@
 
 //  =================================== back grounds ===================== //
 .bg-blue {
-  background: rgba(63, 127, 224, 0.20); ;
+  background: rgba(63, 127, 224, 0.20); 
+}
+.bg-green {
+  background: rgba(115, 209, 138, 0.20);
+
+}
+
+.bg-purple {
+  background: rgba(162, 96, 242, 0.20);
+
+
 }
