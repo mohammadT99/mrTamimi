@@ -4,7 +4,7 @@
   margin-top: 220px;
   padding: 220px 0;
   padding-bottom: 242px;
-  background: url('/assets/images/background-banner.png')no-repeat center;
+  background: url("/assets/images/background-banner.png") no-repeat center;
   // banner content
   .banner__content {
     position: absolute;
@@ -42,9 +42,9 @@
 .banner__content__rartines {
   margin-top: 42px;
   display: flex;
-  gap:12px;
+  gap: 12px;
   .banner__content__rartines__text {
-    font-size: 22px ;
+    font-size: 22px;
     font-weight: 700;
     line-height: 32px;
   }
@@ -54,6 +54,17 @@
     gap: 14px;
   }
 }
+//  ========================= reasponsive disign =============== //
 
+@media only screen and (max-width: 1380px) {
+  .banner {
+    .banner__content {
+      position: absolute;
+      top: -95px;
+      left: 125px;
+    }
+  }
+}
 
-
+@media only screen and (max-width: 1200px) {
+}

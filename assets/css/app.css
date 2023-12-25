@@ -466,6 +466,10 @@ body {
   border: 1px dashed #ccc;
 }
 
+.d-none {
+  display: none !important;
+}
+
 .border-none {
   border: none !important;
 }
@@ -611,7 +615,7 @@ body {
     display: none;
   }
   .responsive__menue {
-    display: flex;
+    display: flex !important;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -818,6 +822,13 @@ body {
   gap: 14px;
 }
 
+@media only screen and (max-width: 1380px) {
+  .banner .banner__content {
+    position: absolute;
+    top: -95px;
+    left: 125px;
+  }
+}
 .card__prices {
   display: flex;
   padding-top: 62px;
