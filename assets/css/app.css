@@ -321,17 +321,19 @@ body {
 
 @media (min-width: 576px) {
   .container-sm, .container {
-    max-width: 540px;
+    padding: 0 15px;
+    max-width: 100%;
   }
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
-    max-width: 720px;
+    padding: 0 15px;
+    max-width: 100%;
   }
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+    max-width: 980px;
   }
 }
 @media (min-width: 1200px) {
@@ -344,6 +346,11 @@ body {
     max-width: 1320px;
   }
 }
+@media only screen and (max-width: 1280px) {
+  .container {
+    justify-content: center;
+  }
+}
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -352,16 +359,6 @@ body {
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
-}
-
-.row > * {
-  box-sizing: border-box;
-  flex-shrink: 0;
-  width: 100%;
-  max-width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
-  margin-top: var(--bs-gutter-y);
 }
 
 .col {
@@ -548,7 +545,7 @@ body {
   justify-content: center;
 }
 .header__nav .nav .nav-link {
-  padding-right: 28px;
+  padding-right: 20px;
   color: #000;
   font-size: 16px;
   font-weight: 700;
@@ -585,6 +582,54 @@ body {
   width: 28px;
 }
 
+.responsive__menue {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    white-space: nowrap;
+  }
+  .header .header__nav {
+    padding-right: 20px;
+  }
+  .header .header__right__icon {
+    display: none;
+  }
+  .header .flag .flag-nav::after {
+    display: none;
+  }
+}
+@media only screen and (max-width: 968px) {
+  .header__right {
+    display: none;
+  }
+  .header__nav {
+    display: none;
+  }
+  .responsive__menue {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header__right {
+    display: none;
+  }
+  .header__nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .header__nav {
+    display: none;
+  }
+  .header__right {
+    display: none;
+  }
+}
 .slides {
   display: flex;
   padding-top: 100px;
@@ -878,6 +923,22 @@ body {
   gap: 16px;
 }
 
+@media only screen and (min-width: 1280px) {
+  .plans__card {
+    padding: 30px;
+  }
+  .plans__card .plans__card__title .plans__card__title__text {
+    white-space: nowrap;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .plans__card {
+    padding: 20px;
+  }
+  .plans__card .plans__card__title .plans__card__title__text {
+    white-space: nowrap;
+  }
+}
 .advantages {
   padding-top: 100px;
 }
