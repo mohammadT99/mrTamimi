@@ -356,6 +356,8 @@ body {
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
@@ -378,11 +380,6 @@ body {
 .col-3 {
   flex: 0 0 auto;
   width: 25%;
-}
-
-.col-4 {
-  flex: 0 0 auto;
-  width: 33.33333333%;
 }
 
 .col-5 {
@@ -655,6 +652,7 @@ body {
   display: flex;
   gap: 70px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer__card__left {
@@ -686,6 +684,11 @@ body {
   text-wrap: nowrap;
 }
 
+@media only screen and (max-width: 680px) {
+  .footer__card {
+    display: none;
+  }
+}
 .about .about__title {
   text-align: right;
 }
@@ -722,6 +725,21 @@ body {
   font-weight: 900;
 }
 
+@media only screen and (max-width: 1024px) {
+  .about__body__home {
+    flex-direction: row;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .about__body__home {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about__body__home {
+    flex-direction: column;
+  }
+}
 .team .team__title .team__title__text {
   font-size: 34px;
   font-weight: 900;
@@ -738,6 +756,7 @@ body {
   align-items: center;
   margin-top: 32px;
   padding: 14px 42px;
+  justify-content: center;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 5px 20px 20px 0px rgba(0, 0, 0, 0.1);
@@ -766,6 +785,13 @@ body {
 .team__card .team__card__body__icon .team__card__body__icon__img {
   height: 28px;
   width: 28px;
+}
+
+.team__body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .banner {
@@ -854,6 +880,29 @@ body {
     margin-top: 10px;
     text-wrap: balance;
     line-height: 35px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .banner .banner__content {
+    position: absolute;
+    top: -140px;
+    left: 20px;
+  }
+  .banner .banner__content__title .banner__content__title__text {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 0;
+  }
+  .banner .banner__content__title .banner__content__title-span {
+    font-size: 40px;
+  }
+  .banner .banner__content__desc {
+    margin-top: 10px;
+    text-wrap: balance;
+    line-height: 35px;
+  }
+  .banner .banner__content__rartines__text {
+    text-wrap: nowrap;
   }
 }
 @media only screen and (max-width: 540px) {
@@ -1089,6 +1138,11 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 1024px) {
+  .advantages__cards {
+    display: block;
+  }
+}
 .form-group {
   margin-top: 70px;
   display: flex;
