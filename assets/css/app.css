@@ -227,7 +227,7 @@ body {
 }
 
 .p-20 {
-  padding-top: 150px;
+  padding-top: 50px;
 }
 
 .p-num {
@@ -829,6 +829,56 @@ body {
     left: 125px;
   }
 }
+@media only screen and (max-width: 1200px) {
+  .banner .banner__content {
+    position: absolute;
+    top: -95px;
+    left: 90px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .banner .banner__content {
+    position: absolute;
+    top: -130px;
+    left: 60px;
+  }
+  .banner__content__title .banner__content__title__text {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 0;
+  }
+  .banner__content__title .banner__content__title-span {
+    font-size: 40px;
+  }
+  .banner__content__desc {
+    margin-top: 10px;
+    text-wrap: balance;
+    line-height: 35px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .banner .banner__content {
+    position: absolute;
+    top: -140px;
+    left: 20px;
+  }
+  .banner .banner__content__title .banner__content__title__text {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 0;
+  }
+  .banner .banner__content__title .banner__content__title-span {
+    font-size: 40px;
+  }
+  .banner .banner__content__desc {
+    margin-top: 10px;
+    text-wrap: balance;
+    line-height: 35px;
+  }
+  .banner .banner__content__rartines__text {
+    text-wrap: nowrap;
+  }
+}
 .card__prices {
   display: flex;
   padding-top: 62px;
@@ -931,7 +981,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 60px;
 }
 
 @media only screen and (min-width: 1280px) {
@@ -948,6 +998,48 @@ body {
   }
   .plans__card .plans__card__title .plans__card__title__text {
     white-space: nowrap;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .plans__card__rigth {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  .plans__card__title__text {
+    white-space: nowrap;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .plans__card__rigth {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .plans__card__rigth {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .plans__card__rigth {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
   }
 }
 .advantages {

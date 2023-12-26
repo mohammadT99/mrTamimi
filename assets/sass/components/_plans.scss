@@ -59,13 +59,14 @@
     font-size: 16px;
     font-weight: 600;
   }
+  
 }
 
 .plans__card__rigth {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 60px;
 }
 
 // ========================= responsive ================ //
@@ -100,10 +101,53 @@
         }
     }
 }
-@media only screen and (max-width: 768px) {
-  // empty
+@media only screen and (max-width: 1024px) {
+  .plans__card__rigth {
+    display:flex;
+    flex-wrap:wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 0 !important;
+    padding-top:0 !important ;
+  }
+  .plans__card__title__text {
+    white-space: nowrap;
+
+}
 }
 
+@media only screen and (max-width: 768px) {
+  .plans__card__rigth {
+    display:flex;
+    flex-wrap:wrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    
+  }
+}
+@media only screen and (max-width: 680px) {
+  .plans__card__rigth {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    
+  }
+}
+
+
 @media only screen and (max-width: 640px) {
-  // empty
+  .plans__card__rigth {
+    display:block;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    
+  }
+  
 }
