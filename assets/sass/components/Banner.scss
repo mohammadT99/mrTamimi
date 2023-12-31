@@ -33,8 +33,9 @@ margin-top: 60px;
             right: 36px;
             .circle{
                 position: absolute;
-                left: 0;
-                right: 0;
+                top: 574px;
+                left: 392px;
+                right:150px;
             }
         }
 
@@ -80,14 +81,32 @@ margin-top: 60px;
         width: 100%;
         // max-width: max-content;
     }
-    .content {
-        position:relative;
-        top: 50px ;
+  
+}
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 60px;
+.content {
+    position:relative;
+    top: 70px ;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
+    p {
+        font-size: 48px;
+        font-weight:700;
+        color: white    ;
+    }
+    span {
+        color: white;
     }
 }
 

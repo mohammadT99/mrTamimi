@@ -253,8 +253,9 @@ body {
 }
 .banner .banner__content__right .banner__content__right__img .circle {
   position: absolute;
-  left: 0;
-  right: 0;
+  top: 574px;
+  left: 392px;
+  right: 150px;
 }
 
 .banner__content__left__button {
@@ -292,13 +293,30 @@ body {
   z-index: -1;
   width: 100%;
 }
-.banner__content__end .content {
+
+.content {
   position: relative;
-  top: 50px;
+  top: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 100px;
+}
+
+.txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 14px;
+}
+.txt p {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+}
+.txt span {
+  color: white;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -347,6 +365,239 @@ body {
     right: 14px;
   }
 }
+.about .about__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.about .about__header h1 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: normal;
+}
+.about .about__header p {
+  font-size: 16px;
+  font-weight: 500;
+  width: 1100px;
+  text-align: center;
+  color: #333;
+}
+
+.about__crads {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.about__crads .about__card__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 13px 28px 0px rgba(0, 0, 0, 0.06), 0px 51px 51px 0px rgba(0, 0, 0, 0.05), 0px 116px 69px 0px rgba(0, 0, 0, 0.03), 0px 206px 82px 0px rgba(0, 0, 0, 0.01), 0px 322px 90px 0px rgba(0, 0, 0, 0);
+}
+
+.about__header__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.about__header__text h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.about__header__text p {
+  width: 324px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4D4D4D;
+  text-align: center;
+}
+
+.courses {
+  margin-top: 80px;
+}
+
+.courses__filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.courses__cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.courses__card .card__item {
+  background-color: white;
+  box-shadow: 0px 13px 28px 0px rgba(0, 0, 0, 0.06), 0px 51px 51px 0px rgba(0, 0, 0, 0.05), 0px 116px 69px 0px rgba(0, 0, 0, 0.03), 0px 206px 82px 0px rgba(0, 0, 0, 0.01), 0px 322px 90px 0px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+.courses__card .courses__card {
+  position: absolute;
+}
+.courses__card .card__item__body {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+}
+.courses__card .btn-card {
+  margin-top: 100px;
+  padding: 10px 72px !important;
+  position: relative;
+  top: -120px;
+  left: 90px;
+}
+
+.about_company {
+  margin-top: 20px;
+}
+
+.company__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.company__header h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.company__header p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  width: 900px;
+  text-align: center;
+}
+
+.company__video {
+  position: relative;
+  z-index: 1;
+  margin-top: 30px;
+  background: url("/assets/images/video.png");
+  width: 1120px;
+  height: 612px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company__about__list {
+  z-index: -1;
+  margin-top: 150px;
+  background-color: #FFCF59;
+  position: absolute;
+  padding: 40px;
+  width: 100%;
+  height: 800px;
+  margin-right: auto;
+  display: flex;
+}
+.company__about__list .about__company__circle {
+  position: relative;
+  left: -41px;
+  top: -294px;
+}
+.company__about__list .about__company__circle .image {
+  position: relative;
+  top: 264px;
+  left: -500px;
+}
+
+.company__about__list__text {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.company__about__list__text h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.company__about__list__text p {
+  font-size: 16px;
+  width: 500px;
+  text-align: center;
+}
+
+.cards__company {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.company__card {
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 10px;
+  padding-left: 20px;
+  padding-right: 250px;
+  padding: top 10px bottom 5px;
+  gap: 30px;
+}
+
+.tx {
+  width: max-content !important;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.program {
+  margin-top: 1000px;
+}
+.program .program__hrader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.program .program__hrader h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.program .program__hrader p {
+  width: 900px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.program__crad {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
 .container {
   width: 100%;
   max-width: 1320px;
@@ -400,6 +651,10 @@ body {
   background-color: #FFCF59;
   font-size: 14px;
   font-weight: 700;
+}
+
+.btn-outline {
+  border: 1px solid #ccc;
 }
 
 .nav-link {
