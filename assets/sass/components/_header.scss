@@ -30,7 +30,16 @@
   }
 }
 
+.responsive__menue{
+display: none;
+}
 
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
 
 
 
@@ -38,3 +47,18 @@
 
 
 //  =====================  reaposnsive ============== //
+
+
+@media only screen and (max-width:836px) {
+  
+  .responsive__menue {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+  .login {
+    display: none;
+  }
+}
+

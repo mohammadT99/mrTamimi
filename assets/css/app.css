@@ -197,23 +197,232 @@ body {
   color: white;
 }
 
+.responsive__menue {
+  display: none;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+@media only screen and (max-width: 836px) {
+  .responsive__menue {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+  .login {
+    display: none;
+  }
+}
+.banner {
+  margin-top: 60px;
+}
+.banner .banner__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 152px;
+}
+.banner .banner__content__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.banner .banner__content__left .banner__content__left__header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.banner .banner__content__left .text-header {
+  font-size: 52px;
+  line-height: 62px;
+}
+.banner .banner__content__right {
+  position: relative;
+}
+.banner .banner__content__right .banner__content__right__img {
+  position: absolute;
+  top: 34px;
+  right: 36px;
+}
+.banner .banner__content__right .banner__content__right__img .circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.banner__content__left__button {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.banner__content__left__button .video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.banner__content__left__button .video p {
+  font-size: 14px;
+  font-weight: 600;
+}
+.banner__content__left__button .video .icon svg {
+  vertical-align: middle;
+}
+
+.banner__content__end {
+  position: absolute;
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -73px;
+  margin-right: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 1440px;
+}
+.banner__content__end svg {
+  z-index: -1;
+  width: 100%;
+}
+.banner__content__end .content {
+  position: relative;
+  top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .banner .banner__content__right span svg {
+    width: 500px;
+  }
+  .banner .banner__content__right .banner__content__right__img img {
+    width: 380px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .banner .banner__content__left__header {
+    padding-top: 50px;
+  }
+  .banner .banner__content__left__header .text-header {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  .banner .banner__content__left__header .tx-gray {
+    font-size: 14px;
+  }
+  .banner .banner__content__right span svg {
+    width: 400px;
+  }
+  .banner .banner__content__right .banner__content__right__img img {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 836px) {
+  .banner {
+    margin-top: 200px;
+  }
+  .banner .banner__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .banner .banner__content__right {
+    display: none;
+    position: relative;
+  }
+  .banner .banner__content__right .banner__content__right__img {
+    top: 113px;
+    right: 14px;
+  }
+}
 .container {
   width: 100%;
   max-width: 1320px;
-  padding-left: 56px;
-  padding-right: 56px;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .tx-sm {
   font-size: 16px;
 }
 
+.tx-bold {
+  font-weight: 700;
+}
+
 .tx-18 {
   font-size: 18px;
 }
 
+.tx-blue {
+  color: #525FE1;
+}
+
+.tx-gray {
+  color: #8A8A8A;
+  line-height: 20px;
+}
+
 .fw-700 {
   font-weight: 900;
+}
+
+.btn {
+  padding: 13px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 0;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #525FE1 -3.7%, #2E3899 102.51%);
+  color: #fff;
+}
+
+.btn-warning {
+  color: black;
+  background-color: #FFCF59;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #808080;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.z-0 {
+  z-index: 1;
+}
+
+.z-1 {
+  z-index: 2;
+}
+
+.mt-1 {
+  margin-top: -50px;
+}
+
+.svg-header {
+  position: absolute;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=app.css.map */

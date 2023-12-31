@@ -1,19 +1,39 @@
 //  ========================= grid syle ==================== //
-  .container {
-    width: 100%;
-    max-width:1320px;
-    padding-left :56px;
-    padding-right: 56px;
-  }
+
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// @media only screen and(max-width:1536px) {
+  
+// }
+
 
 
   // ==================== fonts style ================== //
   .tx-sm {
     font-size: 16px;
   }
-
+  .tx-bold {
+    font-weight:700;
+  }
   .tx-18 {
     font-size: 18px;
+  }
+
+  .tx-blue {
+    color: #525FE1;
+  }
+
+  .tx-gray {
+    color: #8A8A8A;
+    line-height: 20px;
   }
 
 
@@ -24,6 +44,61 @@
     font-weight: 900;
   }
 
+
+  // ================= buttons ================== //
+  .btn {
+    padding: 13px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 0;
+    
+
+  }
+
+  //btn-color 
+
+  .btn-primary {
+    background: linear-gradient(90deg, #525FE1 -3.7%, #2E3899 102.51%);
+    color: #fff;
+  }
   
+  .btn-warning {
+    color: black;
+    background-color: #FFCF59;
+    font-size: 14px;
+    font-weight:700 ;
+  }
 
   
+
+
+  // ====================== links ============ //
+  .nav-link {
+    color: #808080;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+
+
+  // z-index ============= //
+  .z-0 {
+    z-index: 1;
+  }
+
+  .z-1 {
+    z-index: 2;
+  }
+
+
+  .mt-1 {
+    margin-top: -50px;
+  }
+
+
+  .svg-header {
+    position: absolute;
+    z-index: -1;
+  }
