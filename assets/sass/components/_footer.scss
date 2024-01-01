@@ -1,60 +1,54 @@
-
 .footer {
-    background: url("/assets/images/backgroundfooter.png") no-repeat center;
-    padding: 213px 0;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    .footer__card {
-        padding: 40px;
-        background-color: $white;
-        border-radius: 10px;
+    background-color: #111538;
+    padding: 54px 160px ;
+
+    .footer__content {
         display: flex;
-        gap: 70px;
+        justify-content:space-between;
+        // flex-direction: column;
         align-items: center;
-        flex-wrap: wrap;
-    }
-}
-.footer__card__left {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    width: 350px;
-}
-.footer__card__left__desc {
-    
-    .footer__crad__left__dcsc__text {
-        
-        font-size: 20px;
-        font-weight: 900;
-        
-    }
-}
-
-.footer__card__right {
-    
-    display: flex;
-    justify-content:space-between;
-    .footer__card__link {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px;
-        .footer__link {
-            color: $secondary;
-            font-size: 20px;
-            font-weight: 900;
-            text-wrap: nowrap;
-            
+        gap: 100px;
+        .footer__content__logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            h1 {
+                font-size: 45px;
+                color: white;
+                font-weight: 700;
+            }
+            p {
+                font-size: 16px;
+                color: white;
+                font-weight: 600;
+                text-align: center;
+                width: 318px;
+                // height: 100px;
+            }
         }
-    }
-   
-}
 
-//  ====================== reasponsive disign ============== //
-@media  only screen and (max-width : 680px) {
-    .footer__card {
-        display: none;
+        .footer__content__link {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+            .link-header {
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 700;
+                color: white;
+                text-wrap: nowrap;
+
+            }
+            .link-footer {
+                font-size: 16px;
+                text-wrap: nowrap;
+                font-weight:400 ;
+                color: hsla(0, 0%, 100%, 1);
+            }
+        }
     }
 }

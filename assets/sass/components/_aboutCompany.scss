@@ -56,8 +56,8 @@
         top: -294px;
         .image {
             position: relative;
-            top: 264px;
-            left: -500px;
+            top: -280px;
+            left: 100px;
         }
     }
 }
@@ -69,6 +69,7 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    margin-right: 170px;
     h1 {
         font-size:50px;
         font-weight:700;
@@ -103,4 +104,24 @@
     width: max-content !important;
     font-size: 18px;
     font-weight: 700;
+}
+
+// 
+@media only screen and (max-width :836px) {
+    .company__about__list {
+        .company__about__list__tex {
+            display: block;
+        }
+        .about__company__circle {
+            // z-index: -1;
+            position: relative;
+            left: -41px;
+            top: -249px;
+            .image {
+                position: relative;
+                top: -323px;
+                left: -0;
+            }
+        }
+    } 
 }

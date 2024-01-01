@@ -364,21 +364,6 @@ body {
     top: 113px;
     right: 14px;
   }
-  .banner .circle {
-    display: none;
-  }
-  .banner .banner__content__end {
-    display: block;
-    margin-bottom: 20px;
-  }
-  .banner .content {
-    position: relative;
-    top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-  }
 }
 .about .about__header {
   display: flex;
@@ -438,11 +423,6 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-width: 836px) {
-  .about .about__header {
-    margin-top: 100px;
-  }
-}
 .courses {
   margin-top: 80px;
 }
@@ -543,8 +523,8 @@ body {
 }
 .company__about__list .about__company__circle .image {
   position: relative;
-  top: -280px;
-  left: 100px;
+  top: 264px;
+  left: -500px;
 }
 
 .company__about__list__text {
@@ -553,7 +533,6 @@ body {
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  margin-right: 170px;
 }
 .company__about__list__text h1 {
   font-size: 50px;
@@ -590,21 +569,6 @@ body {
   font-weight: 700;
 }
 
-@media only screen and (max-width: 836px) {
-  .company__about__list .company__about__list__tex {
-    display: block;
-  }
-  .company__about__list .about__company__circle {
-    position: relative;
-    left: -41px;
-    top: -249px;
-  }
-  .company__about__list .about__company__circle .image {
-    position: relative;
-    top: -323px;
-    left: 0;
-  }
-}
 .program {
   margin-top: 1000px;
 }
@@ -634,12 +598,6 @@ body {
   flex-wrap: wrap;
 }
 
-.student__say {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 .student__say .student__say__header {
   display: flex;
   flex-direction: column;
@@ -658,85 +616,17 @@ body {
 
 .student__say__content {
   margin-top: 20px;
-  display: flex;
-  z-index: -1;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: url("/assets/images/back.png") no-repeat;
-  background-size: 100%;
-  border-radius: 10px;
-  max-width: max-content;
+  position: absolute;
+  background: url("/assets/images/back.png") no-repeat center;
   padding: 14px 30px;
-  height: 236px;
+  overflow: hidden;
 }
 .student__say__content p {
-  text-align: center;
-  margin-left: auto;
-  color: white;
-  font-size: 18px;
-  line-height: 32px;
-}
-
-.user__box {
-  z-index: 2;
-  position: relative;
-  top: -57px;
-  left: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  background-color: #111538;
-  padding: 54px 160px;
-}
-.footer .footer__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 100px;
-}
-.footer .footer__content .footer__content__logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.footer .footer__content .footer__content__logo h1 {
-  font-size: 45px;
-  color: white;
-  font-weight: 700;
-}
-.footer .footer__content .footer__content__logo p {
-  font-size: 16px;
-  color: white;
-  font-weight: 600;
-  text-align: center;
-  width: 318px;
-}
-.footer .footer__content .footer__content__link {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-}
-.footer .footer__content .footer__content__link .link-header {
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 700;
-  color: white;
-  text-wrap: nowrap;
-}
-.footer .footer__content .footer__content__link .link-footer {
-  font-size: 16px;
-  text-wrap: nowrap;
-  font-weight: 400;
-  color: hsl(0, 0%, 100%);
+  width: 350px;
+  font-size: 150px;
 }
 
 .container {

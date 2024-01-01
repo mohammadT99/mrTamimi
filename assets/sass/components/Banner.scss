@@ -177,6 +177,22 @@ margin-top: 60px;
                 right:14px;
             }
         }
+        .circle {
+            display: none;
+        }
+
+        .banner__content__end {
+            display: block;
+            margin-bottom: 20px;
+        }
+        .content {
+            position: relative;
+            top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 100px;
+        }
 
   }
 }
