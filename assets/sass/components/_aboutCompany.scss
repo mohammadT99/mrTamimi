@@ -107,7 +107,36 @@
 }
 
 // 
+@media only screen and (max-width :1300px) {
+    .about_company {
+     .company__video {
+         width: 1000px;
+         border-radius: 10px;
+         
+     }
+     
+    }
+ }
+
+@media only screen and (max-width :1024px) {
+   .about_company {
+    .company__video {
+        width: 980px;
+        border-radius: 10px;
+        
+    }
+    
+   }
+}
 @media only screen and (max-width :836px) {
+   .about_company {
+    .company__video {
+        width: 500px;
+        /* padding: 200px; */
+        height: 500px;
+        border-radius: 10px;
+    }
+   }
     .company__about__list {
         .company__about__list__tex {
             display: block;
@@ -123,5 +152,88 @@
                 left: -0;
             }
         }
+        
     } 
+
+
+
+}
+
+// ===================== responsive disign =================== //
+@media only screen and (max-width:900px) {
+
+    .about__company__circle {
+            // z-index: -1;
+            display: none;
+            position: relative;
+            left: -41px;
+            top: -249px;
+            .image {
+                position: relative;
+                top: -323px;
+                left: -0;
+            }
+        }
+        .company__about__list {
+        //    padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+           .company__about__list__text {
+            h1 {
+                font-size:35px ;
+            }
+            p {
+                width: 450px;
+            }
+            .cards__company { 
+                // padding-right: 20px;
+
+                .company__card {
+                    // padding-right: 200px;
+                }
+           }
+        }
+}
+
+
+
+}
+
+@media only screen and (max-width:700px) {
+
+    .about__company__circle {
+            // z-index: -1;
+            display: none;
+            position: relative;
+            left: -41px;
+            top: -249px;
+            .image {
+                position: relative;
+                top: -323px;
+                left: -0;
+            }
+        }
+        .company__about__list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           .company__about__list__text {
+            h1 {
+                font-size:35px ;
+            }
+            p {
+                width: 450px;
+            }
+            .cards__company { 
+                padding-right: 20px;
+                .company__card {
+                    padding-right: 200px;
+                }
+           }
+        }
+}
+
+
+
 }

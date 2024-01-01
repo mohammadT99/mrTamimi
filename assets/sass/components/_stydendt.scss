@@ -56,3 +56,30 @@
   align-items: center;
   //background-color: red;
 }
+
+//  ================== reasponsive ============ 
+
+@media only screen and (max-width:500px) {
+  .student__say__header {
+    h1 {
+      line-height: 60px;
+    }
+  }
+  .student__say__content {
+    width: max-content;
+    // padding: 10px 0;
+    p {
+      width: 400px;
+      padding: 10px;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 60px;
+      text-overflow: ellipsis;
+    }
+  }
+  .user__box {
+    position: relative;
+    top: -140px;
+  }
+  
+}

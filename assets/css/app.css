@@ -590,7 +590,25 @@ body {
   font-weight: 700;
 }
 
+@media only screen and (max-width: 1300px) {
+  .about_company .company__video {
+    width: 1000px;
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .about_company .company__video {
+    width: 980px;
+    border-radius: 10px;
+  }
+}
 @media only screen and (max-width: 836px) {
+  .about_company .company__video {
+    width: 500px;
+    /* padding: 200px; */
+    height: 500px;
+    border-radius: 10px;
+  }
   .company__about__list .company__about__list__tex {
     display: block;
   }
@@ -603,6 +621,60 @@ body {
     position: relative;
     top: -323px;
     left: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .about__company__circle {
+    display: none;
+    position: relative;
+    left: -41px;
+    top: -249px;
+  }
+  .about__company__circle .image {
+    position: relative;
+    top: -323px;
+    left: 0;
+  }
+  .company__about__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .company__about__list .company__about__list__text h1 {
+    font-size: 35px;
+  }
+  .company__about__list .company__about__list__text p {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .about__company__circle {
+    display: none;
+    position: relative;
+    left: -41px;
+    top: -249px;
+  }
+  .about__company__circle .image {
+    position: relative;
+    top: -323px;
+    left: 0;
+  }
+  .company__about__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .company__about__list .company__about__list__text h1 {
+    font-size: 35px;
+  }
+  .company__about__list .company__about__list__text p {
+    width: 450px;
+  }
+  .company__about__list .company__about__list__text .cards__company {
+    padding-right: 20px;
+  }
+  .company__about__list .company__about__list__text .cards__company .company__card {
+    padding-right: 200px;
   }
 }
 .program {
@@ -689,6 +761,26 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-width: 500px) {
+  .student__say__header h1 {
+    line-height: 60px;
+  }
+  .student__say__content {
+    width: max-content;
+  }
+  .student__say__content p {
+    width: 400px;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 60px;
+    text-overflow: ellipsis;
+  }
+  .user__box {
+    position: relative;
+    top: -140px;
+  }
+}
 .footer {
   background-color: #111538;
   padding: 54px 160px;
@@ -697,7 +789,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 100px;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 .footer .footer__content .footer__content__logo {
   display: flex;
@@ -724,6 +817,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .footer .footer__content .footer__content__link .link-header {
   text-decoration: none;
@@ -739,6 +833,17 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
+@media only screen and (max-width: 500px) {
+  footer {
+    flex-wrap: wrap;
+  }
+  footer .footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .container {
   width: 100%;
   max-width: 1320px;

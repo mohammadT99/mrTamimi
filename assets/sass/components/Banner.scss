@@ -197,3 +197,13 @@ margin-top: 60px;
   }
 }
 
+@media only screen and (max-width:500px) {
+    .banner__content {
+        // padding: 50px;
+
+        .banner__content__end {
+            // padding: 50px;
+        }
+    }
+}
+
