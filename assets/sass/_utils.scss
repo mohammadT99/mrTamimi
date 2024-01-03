@@ -41,7 +41,9 @@
 
 
 
-
+.d-none {
+  display: none;
+}
   // font-wigth 
   .fw-700 {
     font-weight: 900;
@@ -66,7 +68,9 @@
     background: linear-gradient(90deg, #525FE1 -3.7%, #2E3899 102.51%);
     color: #fff;
   }
-  
+  .bg-none  {
+    background: none !important;
+  }
   .btn-warning {
     color: black;
     background-color: #FFCF59;
@@ -76,6 +80,14 @@
 
   .btn-outline {
     border: 1px solid #ccc;
+  }
+
+  .filter-btn {
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
 
