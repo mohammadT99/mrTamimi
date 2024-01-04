@@ -1,0 +1,120 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .filter__box {
+        padding:20px 30px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        .filter__box__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 182px;
+            padding-bottom:26px ;
+            border-bottom:1px solid #ccc ;
+        }
+
+        .filter__box__header__rigth {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:18px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+}
+
+.filter__box__content {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.filter__box__content__item__op {
+    .filter__box__content__item__op-header {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 8px;
+        gap: 250px;
+        h1 {
+            font-size: 16px;
+            font-weight: 800;
+        }
+    }
+}
+
+
+
+
+.filter__box__content__item__sublist {
+    padding-top:32px;
+    // width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 24px;
+    // border-bottom: 1px solid #ccc;
+      
+    }
+
+
+    .filter__box__content__sublist__item {
+        // width: 290px;
+        display: flex;
+        justify-content: space-between;
+        gap: 191px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom:8px ;
+        h1{
+            font-size: 16px;
+            font-weight: 600;
+            // border-bottom:  1px solid 3;
+            display: flex;
+            text-wrap: nowrap;
+            gap: 8px;
+        }
+       
+        .filter-icon {
+            // display: flex;
+            // align-items: center;
+            svg {
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .filter__box__content__sublist__item__two {
+        display: flex;
+        justify-content: space-between;
+        gap: 156px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom:8px ;
+        h1{
+            font-size: 16px;
+            font-weight: 600;
+            color: #4D4D4D;
+            // border-bottom:  1px solid 3;
+            display: flex;
+            text-wrap: nowrap;
+            gap: 8px;
+        }
+       
+        .filter-icon {
+            // display: flex;
+            // align-items: center;
+            svg {
+                vertical-align: middle;
+            }
+        }
+    }
