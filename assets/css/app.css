@@ -795,6 +795,11 @@ body {
   background-color: #111538;
   padding: 54px 160px;
   margin-top: 40px;
+  background-color: #111538;
+  padding: 54px 160px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
 }
 .footer .footer__content {
   display: flex;
@@ -916,15 +921,25 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contentProduct .content__image {
+  width: 1250px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
   height: 617px;
+}
+.contentProduct .content__image img {
+  width: 100%;
 }
 
 .content__product__header {
   margin-top: 30px;
-  width: 95%;
+  padding: 0px 20px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .content__product__header h1 {
@@ -940,7 +955,7 @@ body {
 
 .content__product__button__header {
   margin-top: 30px;
-  width: 95%;
+  padding: 0px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -953,11 +968,15 @@ body {
 }
 .content__product__button__header .product__button__headder__one h1 {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
+  text-wrap: nowrap;
 }
 .content__product__button__header .product__button__headder__one p {
+  font-size: 12px;
+  font-weight: 700;
   display: flex;
   gap: 6px;
+  text-wrap: nowrap;
 }
 .content__product__button__header .product__button__headder__one p svg {
   vertical-align: middle;
@@ -967,20 +986,28 @@ body {
   justify-content: center;
   gap: 6px;
 }
+.content__product__button__header .product__button__headder__two h1 {
+  font-size: 18px;
+  font-weight: 700;
+  text-wrap: nowrap;
+}
 
 .content__product__navbar {
-  margin-right: 35px;
   margin-top: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 60px;
-  background: linear-gradient(90deg, #CCC -3.7%, #8A8A8A 102.51%);
+  background: url("/assets/images/bg-2.png") no-repeat center;
   padding: 25px 60px;
   border-radius: 10px;
 }
 .content__product__navbar h1 {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.content__product__navbar p {
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -988,6 +1015,186 @@ body {
   margin-top: 20px;
 }
 
+.content__product__meeting {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+  padding: 0px 30px;
+}
+.content__product__meeting .content__Product__meeting__item {
+  background: linear-gradient(90deg, #525FE1 -3.7%, #525FE1 102.51%);
+  border-radius: 10px;
+  padding: 29px 33px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content__product__meeting .content__Product__meeting__item h1 {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+.content__product__meeting .content__Product__meeting__item__open {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 38px;
+  background: linear-gradient(90deg, #525FE1 -3.7%, #525FE1 102.51%);
+  padding: 29px 33px;
+}
+.content__product__meeting .content__Product__meeting__item__open .meeting__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.content__product__meeting .content__Product__meeting__item__open .meeting__header h1 {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+.content__product__meeting .content__Product__meeting__item__open .meeting__list {
+  background: linear-gradient(90deg, #DFE2FF -3.7%, #DFE2FF 102.51%);
+  padding: 29px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.content__product__meeting .content__Product__meeting__item__open .meeting__list .meeting__list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 18px;
+  border-bottom: 0.5px solid #525FE1;
+}
+.content__product__meeting .content__Product__meeting__item__open .meeting__list .meeting__list__item .list-item-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.content__product__meeting .content__Product__meeting__item__open .meeting__list .meeting__list__item .list-item-left span svg {
+  vertical-align: text-bottom;
+}
+.content__product__meeting .content__Product__meeting__item__open .meeting__list .meeting__list__item .list-item-left h1 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #525FE1;
+}
+.content__product__meeting .content__Product__meeting__item__open .meeting__list .meeting__list__item .list-item-reight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.content__product__meeting .content__Product__meeting__item__open .meeting__list .meeting__list__item .list-item-reight h1 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #525FE1;
+}
+.content__product__meeting .content__Product__meeting__item__open .meeting__list .meeting__list__item .list-item-reight span svg {
+  vertical-align: text-bottom;
+}
+
+@media only screen and (max-width: 1380px) {
+  .contentProduct .content__image {
+    width: 1150px;
+  }
+  .contentProduct .content__Product__meeting__item h1 {
+    text-wrap: nowrap;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .contentProduct .content__image {
+    width: 1125px;
+  }
+  .contentProduct .content__Product__meeting__item h1 {
+    text-wrap: nowrap;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .contentProduct .content__image {
+    width: 1100px;
+    height: 750px;
+  }
+  .contentProduct .content__Product__meeting__item h1 {
+    text-wrap: nowrap;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .contentProduct .content__image {
+    width: 1000px;
+    height: 650px;
+  }
+  .contentProduct .content__Product__meeting__item h1 {
+    text-wrap: nowrap;
+  }
+}
+@media only screen and (max-width: 1080px) {
+  .contentProduct .content__image {
+    width: 900px;
+    height: 500px;
+  }
+  .contentProduct .content__Product__meeting__item h1 {
+    text-wrap: nowrap;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contentProduct .content__image {
+    width: 700px;
+    height: 400px;
+  }
+  .contentProduct .content__Product__meeting__item h1 {
+    text-wrap: nowrap;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .contentProduct .content__image {
+    width: 700px;
+    height: 400px;
+  }
+  .contentProduct .content__Product__meeting__item h1 {
+    text-wrap: nowrap;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .contentProduct .content__image {
+    width: 600px;
+    height: 400px;
+  }
+  .contentProduct .content__Product__meeting__item h1 {
+    text-wrap: nowrap;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .contentProduct .content__image {
+    width: 500px;
+    height: 300px;
+  }
+  .contentProduct .content__Product__meeting__item h1 {
+    text-wrap: nowrap;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contentProduct .content__image {
+    width: 450px;
+    height: 250px;
+  }
+  .contentProduct .content__Product__meeting__item h1 {
+    text-wrap: nowrap;
+  }
+  .contentProduct .product__button__headder__one {
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+  }
+  .contentProduct .content__Product__meeting__item__open .meeting__list {
+    padding: 16px 10px;
+  }
+}
 .filter {
   display: flex;
   justify-content: center;
@@ -1097,6 +1304,10 @@ body {
 
 .tx-sm {
   font-size: 16px;
+}
+
+.tx-18 {
+  font-size: 18px;
 }
 
 .tx-bold {
