@@ -1,0 +1,66 @@
+.form-group {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.input-group {
+  position: relative;
+  border: 1.5px solid #ccc;
+  padding: 15px 28px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 233px;
+  // width: 415px;
+  .input-group-form {
+    // padding: 8px 14px;
+    width: 189px;
+    border: 0;
+    outline: 0;
+
+    &::placeholder {
+      font-size: 16px;
+      font-weight: 700;
+      color: #ccc;
+    }
+  }
+
+  .label-group {
+    position: absolute;
+    top: -12px;
+    left: 15px;
+    background-color: white;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 700;
+
+
+  }
+
+}
+
+// ====================== responsive ============== //
+@media only screen and (max-width: 500px) {
+  .form-group {
+
+  }
+  .input-group {
+    display: flex;
+    justify-content: center;
+    //gap: 50px;
+    //width: 150px;
+
+    width: 450px;
+    margin-left: 20px;
+  }
+
+  .login__content__forms__head {
+    margin-left: 20px;
+  }
+
+}
+
+
+

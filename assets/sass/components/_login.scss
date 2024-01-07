@@ -1,0 +1,176 @@
+.login-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 92px;
+}
+
+
+.login__content__forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  .login__content__forms__lgo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      vertical-align: middle;
+    }
+
+    gap: 19px;
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+    }
+  }
+}
+
+.login__content__forms__head {
+  margin-top: 138px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  h1 {
+    font-size: 42px;
+    font-weight: 800;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+.forgut-and-save {
+
+  gap: 230px;
+  display: flex;
+  //gap: 9px;
+  .save {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      font-size: 12px;
+      color: #aaa;
+      font-weight: 700;
+    }
+  }
+
+  .forgut {
+    a {
+      text-decoration: #2E3899 !important;
+      font-size: 12px;
+      font-weight: 600;
+      //text-line-through-style:#2E3899 ;
+    }
+  }
+}
+
+.btn__login {
+  width: 100%;
+  background: linear-gradient(90deg, #525FE1 -3.7%, #2E3899 102.51%);
+  padding: 14px 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+
+}
+
+.line {
+  margin-top: 22px;
+  border: 1px solid #ccc;
+  height: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    padding: 10px;
+    background-color: white;
+    font-size: 14px;
+    font-weight: 900;
+    color: #aaaaaa;
+  }
+}
+
+
+.box__link {
+  argin-top: 20px;
+  padding: 14px 48px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 94px;
+}
+
+// ======================== responsive ================== //
+@media only screen and (max-width: 1536px){
+  .login__img {
+    width: 680px;
+    height: 900px;
+  }
+}
+
+@media only screen and (max-width: 1280px){
+  .login__img {
+    width: 550px;
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  .ogin-content {
+    display: flex;
+    align-items: center;
+  }
+  .login__img {
+    width: 450px;
+    height: 550px;
+  }
+
+}
+
+
+@media only screen and (max-width: 768px){
+  .ogin-content {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .login__img {
+    display: none;
+    width: 350px;
+    height: 550px;
+  }
+
+}
+
+@media only screen and (max-width: 500px){
+  .ogin-content {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .login__img {
+    display: none;
+    width: 350px;
+    height: 550px;
+  }
+
+}
+
+
+
+
+
+
