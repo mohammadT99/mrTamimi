@@ -862,7 +862,11 @@ body {
 }
 .bradcump {
   margin-top: 20px;
-  background-color: #525FE1;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("/assets/images/bradcomp.svg") no-repeat center;
+  border-radius: 10px;
+  width: 1440px;
   padding: 10px;
 }
 .bradcump .brsdcump__content {
@@ -1485,6 +1489,115 @@ body {
     margin-left: 20px;
   }
 }
+.dashboard__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 35px;
+  margin-right: 108px;
+  margin-left: 108px;
+  margin-top: 54px;
+  margin-bottom: 54px;
+}
+
+.sidebar {
+  padding: 45px 52px;
+  background: linear-gradient(90deg, #525FE1 54.09%, #525FE1 160.3%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: fl;
+}
+.sidebar .avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+.sidebar .avatar h1 {
+  color: #fff;
+}
+
+.sidebar__link {
+  margin-top: 61px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.sidebar__link .nav-link {
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 18px;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+.sidebar__link .nav-link span svg {
+  vertical-align: top;
+}
+
+.ticket__tabel__header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #858585;
+}
+.ticket__tabel__header .tickets {
+  color: #858585;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px; /* 77.778% */
+}
+.ticket__tabel__header .view-all {
+  color: #525FE1;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px; /* 100% */
+}
+
+.tabel__content {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #858585;
+}
+.row .rowsection-1 {
+  display: flex;
+  justify-content: center;
+  gap: 135px;
+}
+.row .rowsection-1 span {
+  font-size: 16px;
+  font-weight: 700;
+  color: #858585;
+}
+.row .rowsection-1 .rowsection-2 {
+  display: flex;
+  justify-content: center;
+  gap: 92px;
+}
+
+.ticket__content {
+  background: linear-gradient(90deg, #DFE2FF -3.7%, #DFE2FF 102.51%);
+  padding: 32px;
+  border-radius: 10px;
+  width: 100%;
+}
+
 .container {
   width: 100%;
   max-width: 1320px;
@@ -1512,6 +1625,10 @@ body {
 
 .tx-blue {
   color: #525FE1;
+}
+
+.tx-red {
+  color: #FD2347 !important;
 }
 
 .tx-gray {
