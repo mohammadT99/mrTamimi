@@ -18,6 +18,13 @@
     line-height: 12px; /* 100% */
   }
 }
+.ticket__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 21px;
+}
+
 
 .tabel__content {
   margin-top: 40px;
@@ -28,7 +35,7 @@
 }
 .row {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 45px;
   padding-bottom: 18px;
   border-bottom: 1px solid #858585;
@@ -50,4 +57,463 @@
     }
 
   }
+}
+.tabel__botom {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center ;
+
+}
+
+.tabel_card {
+  padding: 14px 70px ;
+  border-radius: 10px;
+  h1 {
+    font-size:14px;
+    font-weight: 700;
+  }
+  span {
+    color: #4183E6;
+  }
+}
+
+.tabel_card-xl {
+  background: linear-gradient(90deg, #E3F6E8 -3.7%, #E3F6E8 102.51%);
+  padding: 14px 80px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  page: 6px;
+  h1 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  span {
+    color: #4183E6;
+  }
+}
+
+//======================== tabel price =================== //
+
+  .tabels {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+  }
+.price__tabel {
+  background: linear-gradient(90deg, #DFE2FF -3.7%, #DFE2FF 102.51%);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+}
+.price__row {
+  padding-bottom:12px ;
+  border-bottom: 0.5px solid #858585;
+  display: flex;
+  justify-content:center;
+  gap: 250px;
+}
+
+.price__row__text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  span {
+    font-size: 12px;
+    font-weight: 700;
+    color: #8A8A8A;
+  }
+  h1 {
+    font-size:14px;
+    font-weight: 800;
+    color: #858585;
+    text-wrap: nowrap;
+  }
+}
+.price__row__price {
+p{
+  font-size: 16px;
+  font-weight: 800;
+}
+}
+
+
+// ======================= reasponsive ========================== //
+@media only  screen and (max-width: 1440px) {
+  .dashborad__content__tabels {
+    .ticket__content {
+      //padding: 20px;
+      width: max-content;
+      .ticket__tabel__header {
+      width: max-content;
+        gap: 800px;
+      }
+      .row {
+        width: max-content;
+      }
+      .rowsection-1 {
+      display: flex;
+        justify-content: center;
+        gap: 200px;
+      }
+
+    }
+  }
+  .price__tabel {
+    padding: 15px;
+  }
+
+}
+@media only  screen and (max-width: 1360px) {
+  .dashborad__content__tabels {
+    .ticket__content {
+      //padding: 20px;
+      width: max-content;
+      .ticket__tabel__header {
+        width: max-content;
+        gap: 720px;
+      }
+      .row {
+        width: max-content;
+      }
+      .rowsection-1 {
+        display: flex;
+        justify-content: center;
+        gap: 150px;
+      }
+      .rowsection-2 {
+        gap: 50px;
+      }
+
+    }
+  }
+  .price__tabel {
+    padding: 15px;
+  }
+  .price__row {
+    gap: 200px;
+  }
+
+}
+@media only  screen and (max-width: 1300px) {
+  .dashborad__content__tabels {
+    .ticket__content {
+      //padding: 20px;
+      width: max-content;
+      .ticket__tabel__header {
+        width: max-content;
+        gap: 650px;
+      }
+      .row {
+        width: max-content;
+        gap: 35px;
+      }
+      .rowsection-1 {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+      }
+      .rowsection-2 {
+        gap: 40px;
+      }
+    }
+  }
+  .tabel_card-xl {
+    padding: 14px 60px;
+  }
+  .price__tabel {
+    padding: 15px;
+  }
+  .price__row {
+    gap: 170px;
+  }
+
+}
+@media only  screen and (max-width: 1024px) {
+  .dashborad__content__tabels {
+    .ticket__content {
+      //padding: 20px;
+      padding: 20px;
+      width: max-content;
+      .ticket__tabel__header {
+        width: max-content;
+        gap: 486px;
+      }
+      .row {
+        width: max-content;
+        gap: 20px;
+      }
+      .rowsection-1 {
+
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        span {
+          font-size:14px;
+        }
+      }
+      .rowsection-2 {
+        gap: 30px;
+      }
+    }
+  }
+  .tabel__botom {
+    gap: 12px;
+  }
+  .tabel_card {
+    //margin-top: 12px;
+    font-size: 14px;
+    padding: 14px 40px;
+  }
+  .tabel_card-xl {
+    padding: 14px 50px;
+    font-size: 14px;
+  }
+  .price__tabel {
+    padding: 15px;
+    .price__row__text {
+      h1{
+        font-size:14px;
+        font-weight: 700;
+      }
+      span {
+        svg {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .price__row {
+    gap: 100px;
+  }
+
+}
+@media only  screen and (max-width: 760px) {
+  .dashborad__content__tabels {
+    .ticket__content {
+      //padding: 20px;
+      padding: 20px;
+      width: max-content;
+      .ticket__tabel__header {
+        width: max-content;
+        gap: 395px;
+      }
+      .row {
+        width: max-content;
+        gap: 10px;
+      }
+      .rowsection-1 {
+
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        span {
+          font-size:12px;
+          font-weight: 700;
+        }
+      }
+      .rowsection-2 {
+        gap: 30px;
+      }
+    }
+  }
+  .tabel__botom {
+    gap: 12px;
+  }
+  .tabel_card {
+    //margin-top: 12px;
+    font-size: 14px;
+    padding: 14px 20px;
+    h1 {
+      font-size: 14px;
+    }
+  }
+  .tabel_card-xl {
+    padding: 14px 20px;
+    font-size: 14px;
+    h1 {
+      font-size: 14px;
+    }
+  }
+  .tabels {
+    display: block;
+    gap: 20px;
+  }
+  .price__tabel {
+    margin-top: 20px;
+    padding: 20px;
+    .price__row__text {
+      h1{
+        font-size:14px;
+        font-weight: 700;
+      }
+      span {
+        svg {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .price__row {
+    gap: 270px;
+  }
+
+}
+@media only  screen and (max-width: 640px) {
+  .dashborad__content__tabels {
+    .ticket__content {
+      //padding: 20px;
+      padding: 15px;
+      width: max-content;
+      .ticket__tabel__header {
+        width: max-content;
+        gap: 320px;
+      }
+      .row {
+        width: max-content;
+        gap: 10px;
+      }
+      .rowsection-1 {
+
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        span {
+          font-size:10px;
+          font-weight: 700;
+        }
+      }
+      .rowsection-2 {
+        gap: 30px;
+      }
+    }
+  }
+  .tabel__botom {
+    gap: 12px;
+  }
+  .tabel_card {
+    //margin-top: 12px;
+    font-size: 14px;
+    padding: 14px 20px;
+    h1 {
+      font-size: 14px;
+    }
+  }
+  .tabel_card-xl {
+    padding: 14px 20px;
+    font-size: 14px;
+    h1 {
+      font-size: 14px;
+    }
+  }
+  .tabels {
+    display: block;
+    gap: 20px;
+  }
+  .price__tabel {
+    margin-top: 20px;
+    padding: 20px;
+    .price__row__text {
+      h1{
+        font-size:14px;
+        font-weight: 700;
+      }
+      span {
+        svg {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .price__row {
+    gap: 270px;
+  }
+
+}
+@media only  screen and (max-width: 500px) {
+  .dashborad__content__tabels {
+    .ticket__content {
+      //padding: 20px;
+      padding:15px 15px;
+      width: max-content;
+      .ticket__tabel__header {
+        width: max-content;
+        gap: 220px;
+      }
+      .row {
+        width: max-content;
+        gap: 0px;
+        span {
+         svg {
+           display: none;
+         }
+        }
+      }
+      .rowsection-1 {
+
+        display: flex;
+        justify-content: flex-start;
+        gap: 0px;
+        span {
+          font-size:10px;
+          font-weight: 600;
+
+        }
+      }
+      .rowsection-2 {
+        gap: 15px;
+      }
+    }
+  }
+  .tabel__botom {
+    gap: 12px;
+    flex-direction:column ;
+  }
+  .tabel_card {
+    //margin-top: 12px;
+    font-size: 16px;
+    padding: 14px 70px;
+    h1 {
+      font-size: 14px;
+    }
+  }
+  .tabel_card-xl {
+    padding: 14px 70px;
+    font-size: 14px;
+    h1 {
+      font-size: 14px;
+    }
+  }
+  .tabels {
+    display: block;
+    gap: 20px;
+  }
+  .price__tabel {
+    margin-top: 20px;
+    padding: 20px;
+    .price__row__text {
+      h1{
+        font-size:14px;
+        font-weight: 700;
+      }
+      span {
+        svg {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .price__row {
+    gap: 140px;
+  }
+
 }

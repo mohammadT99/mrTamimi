@@ -1,21 +1,22 @@
 .sidebar {
-  padding: 45px 52px;
+  padding: 40px 52px;
   background: linear-gradient(90deg, #525FE1 54.09%, #525FE1 160.3%);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: fl;
+  justify-content: flex-start;
 
   .avatar {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 22px;
+    gap: 15px;
 
     h1 {
       color: #fff;
+      text-wrap: nowrap;
     }
   }
 }
@@ -24,7 +25,7 @@
   margin-top: 61px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
 
   .nav-link {
     color: #fff;
@@ -34,7 +35,6 @@
     gap: 18px;
     font-size: 16px !important;
     font-weight: 600 !important;
-
     span {
       svg {
         vertical-align: top;
@@ -42,4 +42,97 @@
     }
   }
 
+}
+
+//  ============================= responsive ========================= //
+@media only  screen  and (max-width: 760px){
+  .sidebar {
+    padding: 40px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .avatar {
+    img{
+      width: 50px;
+    }
+
+    h1 {
+      display: none;
+    }
+  }
+
+  .sidebar__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-link {
+    p{
+      display: none;
+    }
+  }
+}
+
+@media only  screen  and (max-width: 640px){
+  .sidebar {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .avatar {
+    img{
+      width: 40px;
+    }
+
+    h1 {
+      display: none;
+    }
+  }
+
+  .sidebar__link {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-link {
+    p{
+      display: none;
+    }
+  }
+}
+
+@media only  screen  and (max-width: 500px){
+  .sidebar {
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .avatar {
+    img{
+      width: 35px;
+    }
+
+    h1 {
+      display: none;
+    }
+  }
+
+  .sidebar__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .nav-link {
+    p{
+      display: none;
+    }
+  }
 }
