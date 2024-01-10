@@ -892,6 +892,12 @@ body {
   font-weight: 700;
 }
 
+.col-6 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 @media only screen and (max-width: 760px) {
   .bradcump {
     border-radius: 0;
@@ -2149,6 +2155,167 @@ body {
   width: 100%;
 }
 
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.setting__content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.form_settings {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form_settings .form_setting_header h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.form_settings .forms {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btns__submit {
+  margin-top: 32px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.btn__submit__save {
+  background-color: #D25487;
+  color: white;
+  padding: 14px 30px;
+}
+
+.btn__submit {
+  border: 1px solid #8A8A8A;
+  color: #8A8A8A;
+  padding: 14px 60px;
+  border-radius: 10px;
+}
+
+.btn__submit-xl {
+  border: 1px solid #8A8A8A;
+  padding: 14px 100px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 10px;
+  color: white;
+  background: linear-gradient(90deg, #525FE1 -3.7%, #2E3899 102.51%);
+}
+
+.setting__profile__img {
+  padding: 14px 14px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.setting__profile__img img {
+  width: 60px;
+}
+.setting__profile__img .setting__profile__img__title h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.setting__profile__user__crad {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
+}
+.setting__profile__user__crad h1 {
+  font-weight: 600;
+}
+.setting__profile__user__crad .card__user__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.setting__profile__user__crad .btns__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.setting__profile__user__crad .card__user__btn__del {
+  padding: 8px;
+  color: #D25487;
+  transition: all 0.3s ease;
+}
+.setting__profile__user__crad .card__user__btn__del:hover {
+  background-color: #D25487;
+  color: white;
+}
+
+.card__user__btn__upd {
+  padding: 8px;
+  color: #AAA;
+}
+.card__user__btn__upd:hover {
+  background-color: #AAA;
+  color: #D25487;
+}
+
+.upload__box {
+  margin-top: 20px;
+  padding: 20px 51px;
+  border: 1.5px dashed #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.setting__profile__google {
+  margin-top: 18px;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.setting__profile__google .setting__profile__google__top img {
+  width: 133px;
+}
+
+.setting__profile__google__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.setting__profile__google__top__btn {
+  padding: 13px 41px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, rgba(82, 95, 225, 0.5) -3.7%, rgba(46, 56, 153, 0.5) 102.51%);
+  color: white;
+}
+
+.setting__profile__google__bottom {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 14px;
+}
+.setting__profile__google__bottom h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.setting__profile__google__bottom span {
+  color: #8A8A8A;
+}
+
 .container {
   width: 100%;
   max-width: 1320px;
@@ -2176,6 +2343,10 @@ body {
 
 .tx-blue {
   color: #525FE1;
+}
+
+.f-w {
+  font-weight: 700;
 }
 
 .tx-green {

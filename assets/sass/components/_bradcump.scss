@@ -29,6 +29,12 @@
     }
 }
 
+.col-6 {
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
 @media only  screen and (max-width: 760px) {
     .bradcump {
         border-radius: 0;
