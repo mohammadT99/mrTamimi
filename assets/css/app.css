@@ -1492,12 +1492,29 @@ body {
   font-weight: 700;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1280px) {
   .input-group {
-    display: flex;
-    justify-content: center;
-    width: 450px;
-    margin-left: 20px;
+    gap: 220px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .input-group {
+    gap: 100px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .input-group {
+    gap: 220px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .forms {
+    width: max-content;
+  }
+  .input-group {
+    gap: 94px;
+    width: max-content;
+    margin-right: 51px;
   }
   .login__content__forms__head {
     margin-left: 20px;
@@ -1521,6 +1538,18 @@ body {
   gap: 22px;
 }
 
+@media only screen and (max-width: 1400px) {
+  .dashboard__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 25px;
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
 @media only screen and (max-width: 1280px) {
   .dashboard__content {
     display: flex;
@@ -2191,26 +2220,26 @@ body {
 }
 
 .btn__submit__save {
-  background-color: #D25487;
+  background-color: #d25487;
   color: white;
   padding: 14px 30px;
 }
 
 .btn__submit {
-  border: 1px solid #8A8A8A;
-  color: #8A8A8A;
+  border: 1px solid #8a8a8a;
+  color: #8a8a8a;
   padding: 14px 60px;
   border-radius: 10px;
 }
 
 .btn__submit-xl {
-  border: 1px solid #8A8A8A;
+  border: 1px solid #8a8a8a;
   padding: 14px 100px;
   font-size: 14px;
   font-weight: 700;
   border-radius: 10px;
   color: white;
-  background: linear-gradient(90deg, #525FE1 -3.7%, #2E3899 102.51%);
+  background: linear-gradient(90deg, #525fe1 -3.7%, #2e3899 102.51%);
 }
 
 .setting__profile__img {
@@ -2251,21 +2280,21 @@ body {
 }
 .setting__profile__user__crad .card__user__btn__del {
   padding: 8px;
-  color: #D25487;
+  color: #d25487;
   transition: all 0.3s ease;
 }
 .setting__profile__user__crad .card__user__btn__del:hover {
-  background-color: #D25487;
+  background-color: #d25487;
   color: white;
 }
 
 .card__user__btn__upd {
   padding: 8px;
-  color: #AAA;
+  color: #aaa;
 }
 .card__user__btn__upd:hover {
-  background-color: #AAA;
-  color: #D25487;
+  background-color: #aaa;
+  color: #d25487;
 }
 
 .upload__box {
@@ -2313,9 +2342,130 @@ body {
   font-weight: 700;
 }
 .setting__profile__google__bottom span {
-  color: #8A8A8A;
+  color: #8a8a8a;
 }
 
+@media only screen and (max-width: 1280px) {
+  .setting__content {
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .upload__box {
+    padding: 14px 21px;
+    text-wrap: nowrap;
+  }
+  .setting__profile__img {
+    width: 360px;
+  }
+  .setting__profile__google {
+    padding: 20px;
+    width: 360px;
+  }
+  .btns__submit {
+    gap: 25px;
+  }
+  .btn__submit-xl {
+    padding: 14px 70px;
+  }
+  .btn__submit {
+    padding: 14px 45px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .setting__content {
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .upload__box {
+    padding: 14px 21px;
+    text-wrap: wrap;
+    text-align: center;
+  }
+  .setting__profile__img {
+    padding: 14px;
+    width: 280px;
+  }
+  .setting__profile__google {
+    padding: 14px;
+    width: 280px;
+  }
+  .btns__submit {
+    gap: 14px;
+  }
+  .btn__submit-xl {
+    padding: 14px 40px;
+  }
+  .btn__submit {
+    padding: 14px 25px;
+  }
+}
+@media only screen and (max-width: 835px) {
+  .setting__content {
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .upload__box {
+    padding: 14px 21px;
+    text-wrap: wrap;
+    text-align: center;
+  }
+  .setting__profile__img {
+    padding: 14px 60px;
+    width: 400px;
+  }
+  .setting__profile__google {
+    padding: 14px 60px;
+    width: 400px;
+  }
+  .btns__submit {
+    gap: 14px;
+  }
+  .btn__submit-xl {
+    padding: 14px 100px;
+  }
+  .btn__submit {
+    padding: 14px 60px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .setting__content {
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .upload__box {
+    padding: 14px 21px;
+    text-wrap: wrap;
+    text-align: center;
+  }
+  .setting__profile__img {
+    padding: 14px 60px;
+    width: 360px;
+    margin-right: 50px;
+  }
+  .setting__profile__google {
+    padding: 14px 60px;
+    width: 360px;
+    margin-right: 50px;
+  }
+  .btns__submit {
+    gap: 14px;
+    margin-right: 50px;
+  }
+  .btn__submit-xl {
+    padding: 14px 70px;
+  }
+  .btn__submit {
+    padding: 14px 40px;
+  }
+}
 .container {
   width: 100%;
   max-width: 1320px;

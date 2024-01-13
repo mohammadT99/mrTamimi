@@ -39,17 +39,42 @@
 }
 
 // ====================== responsive ============== //
+@media only screen and (max-width:1280px) {
+  .input-group {
+    gap: 220px ;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  .input-group {
+    gap: 100px ;
+  }
+}
+
+@media only screen and (max-width:835px) {
+  .input-group {
+    gap: 220px ;
+  }
+}
+
+
+
+
 @media only screen and (max-width: 500px) {
   .form-group {
   }
-  .input-group {
-    display: flex;
-    justify-content: center;
-    //gap: 50px;
-    //width: 150px;
 
-    width: 450px;
-    margin-left: 20px;
+  .forms {
+    width: max-content;
+  }
+  .input-group {
+    
+    gap: 94px;
+    width: max-content;
+
+    // width: 450px;
+    // margin-left: 20px;
+    margin-right: 51px;
   }
 
   .login__content__forms__head {
