@@ -1,6 +1,5 @@
 //  ========================= grid syle ==================== //
 
-
 .container {
   width: 100%;
   max-width: 1320px;
@@ -11,46 +10,85 @@
 }
 
 // @media only screen and(max-width:1536px) {
-  
+
 // }
 
+.bg-primary {
+  background: linear-gradient(90deg, #525fe1 -3.7%, #2e3899 102.51%);
+  padding: 14px;
+  h1 {
+    color: white;
+  }
+}
 
+.just-space {
+  justify-content: space-between !important;
+  gap: 0 !important;
+}
+// ==================== fonts style ================== //
+.tx-sm {
+  font-size: 16px;
+}
+.tx-18 {
+  font-size: 18px;
+}
+.tx-bold {
+  font-weight: 700;
+}
+.tx-18 {
+  font-size: 18px;
+}
 
-  // ==================== fonts style ================== //
-  .tx-sm {
-    font-size: 16px;
-  }
-  .tx-18 {
-    font-size: 18px;
-  }
-  .tx-bold {
-    font-weight:700;
-  }
-  .tx-18 {
-    font-size: 18px;
-  }
+.tx-blue {
+  color: #525fe1;
+}
+.f-w {
+  font-weight: 700;
+}
+.tx-green {
+  color: #74d38c;
+}
+.tx-red {
+  color: #fd2347 !important;
+}
 
-  .tx-blue {
-    color: #525FE1;
-  }
-  .f-w {
-    font-weight: 700;
-  }
-  .tx-green {
-    color: #74D38C;
+.tx-gray {
+  color: #8a8a8a;
+  line-height: 20px;
+}
+// .tx-green {
+//   color: ;
+// }
 
+.g-2 {
+  display: flex;
+  // justify-content: center;
+  gap: 8px;
+  svg {
+    vertical-align: middle;
   }
-  .tx-red {
-    color: #FD2347 !important;
-  }
+}
 
-  .tx-gray {
-    color: #8A8A8A;
-    line-height: 20px;
-  }
-  // .tx-green {
-  //   color: ;
-  // }
+.g-4 {
+  gap: 34px;
+}
+.d-flex {
+  display: flex;
+}
+
+.item-center {
+  // justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.tx-16 {
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+}
 
 .f-10 {
   font-size: 10px !important;
@@ -66,84 +104,88 @@
 .d-none {
   display: none;
 }
-  // font-wigth 
-  .fw-700 {
-    font-weight: 900;
-  }
+// font-wigth
+.fw-700 {
+  font-weight: 900;
+}
 
+// ================= buttons ================== //
+.btn {
+  padding: 13px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 0;
+}
 
-  // ================= buttons ================== //
-  .btn {
-    padding: 13px 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    border: 0;
-    
+//btn-color
 
-  }
+.btn-primary {
+  background: linear-gradient(90deg, #525fe1 -3.7%, #2e3899 102.51%);
+  color: #fff;
+}
+.bg-none {
+  background: none !important;
+}
+.btn-warning {
+  color: black;
+  background-color: #ffcf59;
+  font-size: 14px;
+  font-weight: 700;
+}
 
-  //btn-color 
+.btn-outline {
+  border: 1px solid #ccc;
+}
 
-  .btn-primary {
-    background: linear-gradient(90deg, #525FE1 -3.7%, #2E3899 102.51%);
-    color: #fff;
-  }
-  .bg-none  {
-    background: none !important;
-  }
-  .btn-warning {
-    color: black;
-    background-color: #FFCF59;
-    font-size: 14px;
-    font-weight:700 ;
-  }
-
-  .btn-outline {
-    border: 1px solid #ccc;
-  }
-
-  .filter-btn {
-    font-size: 16px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
+.filter-btn {
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 .bg-blue {
-  background: #B0CEFF;
+  background: #b0ceff;
 }
 .bg-pink {
-  background: #ECDFFC;
+  background: #ecdffc;
 }
 
+.bg-none {
+  background: none;
+}
 
-  // ====================== links ============ //
-  .nav-link {
-    color: #808080;
-    font-size: 16px;
-    font-weight: 600;
-  }
+// ====================== links ============ //
+.nav-link {
+  color: #808080;
+  font-size: 16px;
+  font-weight: 600;
+}
 
+// z-index ============= //
+.z-0 {
+  z-index: 1;
+}
 
+.z-1 {
+  z-index: 2;
+}
 
-  // z-index ============= //
-  .z-0 {
-    z-index: 1;
-  }
+.h-2 {
+  height: 150px;
+}
 
-  .z-1 {
-    z-index: 2;
-  }
+.mt-1 {
+  margin-top: -50px;
+}
 
+.mt-2 {
+  margin-top: 20px;
+}
 
-  .mt-1 {
-    margin-top: -50px;
-  }
-
-
-  .svg-header {
-    position: absolute;
-    z-index: -1;
-  }
+.svg-header {
+  position: absolute;
+  z-index: -1;
+}

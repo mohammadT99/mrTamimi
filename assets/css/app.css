@@ -1723,6 +1723,7 @@ body {
 }
 .ticket__tabel__header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 12px;
   border-bottom: 1px solid #858585;
@@ -1773,6 +1774,8 @@ body {
   font-size: 16px;
   font-weight: 700;
   color: #858585;
+  text-wrap: nowrap;
+  width: max-content;
 }
 .row .rowsection-1 .rowsection-2 {
   display: flex;
@@ -1795,6 +1798,7 @@ body {
 .tabel_card h1 {
   font-size: 14px;
   font-weight: 700;
+  text-wrap: nowrap;
 }
 .tabel_card span {
   color: #4183E6;
@@ -1813,6 +1817,7 @@ body {
 .tabel_card-xl h1 {
   font-size: 16px;
   font-weight: 700;
+  text-wrap: nowrap;
 }
 .tabel_card-xl span {
   color: #4183E6;
@@ -2024,6 +2029,7 @@ body {
   }
   .tabel_card h1 {
     font-size: 14px;
+    text-wrap: nowrap;
   }
   .tabel_card-xl {
     padding: 14px 20px;
@@ -2058,6 +2064,7 @@ body {
   }
   .dashborad__content__tabels .ticket__content .ticket__tabel__header {
     width: max-content;
+    justify-content: s;
     gap: 320px;
   }
   .dashborad__content__tabels .ticket__content .row {
@@ -2085,6 +2092,7 @@ body {
   }
   .tabel_card h1 {
     font-size: 14px;
+    text-wrap: nowrap;
   }
   .tabel_card-xl {
     padding: 14px 20px;
@@ -2184,6 +2192,61 @@ body {
   width: 100%;
 }
 
+.dashboard__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-150 {
+  height: 180px;
+}
+
+@media only screen and (max-width: 900px) {
+  .dashboard__body {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .dashboard__body {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .h-150 {
+    margin-right: 45px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .dashboard__body {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .h-150 {
+    margin-right: 45px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .dashboard__body {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .h-150 {
+    margin-right: 45px;
+  }
+}
 .content {
   display: flex;
   justify-content: center;
@@ -2475,6 +2538,19 @@ body {
   margin-left: auto;
 }
 
+.bg-primary {
+  background: linear-gradient(90deg, #525fe1 -3.7%, #2e3899 102.51%);
+  padding: 14px;
+}
+.bg-primary h1 {
+  color: white;
+}
+
+.just-space {
+  justify-content: space-between !important;
+  gap: 0 !important;
+}
+
 .tx-sm {
   font-size: 16px;
 }
@@ -2492,7 +2568,7 @@ body {
 }
 
 .tx-blue {
-  color: #525FE1;
+  color: #525fe1;
 }
 
 .f-w {
@@ -2500,16 +2576,45 @@ body {
 }
 
 .tx-green {
-  color: #74D38C;
+  color: #74d38c;
 }
 
 .tx-red {
-  color: #FD2347 !important;
+  color: #fd2347 !important;
 }
 
 .tx-gray {
-  color: #8A8A8A;
+  color: #8a8a8a;
   line-height: 20px;
+}
+
+.g-2 {
+  display: flex;
+  gap: 8px;
+}
+.g-2 svg {
+  vertical-align: middle;
+}
+
+.g-4 {
+  gap: 34px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.item-center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.tx-16 {
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
 }
 
 .f-10 {
@@ -2540,7 +2645,7 @@ body {
 }
 
 .btn-primary {
-  background: linear-gradient(90deg, #525FE1 -3.7%, #2E3899 102.51%);
+  background: linear-gradient(90deg, #525fe1 -3.7%, #2e3899 102.51%);
   color: #fff;
 }
 
@@ -2550,7 +2655,7 @@ body {
 
 .btn-warning {
   color: black;
-  background-color: #FFCF59;
+  background-color: #ffcf59;
   font-size: 14px;
   font-weight: 700;
 }
@@ -2568,11 +2673,15 @@ body {
 }
 
 .bg-blue {
-  background: #B0CEFF;
+  background: #b0ceff;
 }
 
 .bg-pink {
-  background: #ECDFFC;
+  background: #ecdffc;
+}
+
+.bg-none {
+  background: none;
 }
 
 .nav-link {
@@ -2589,8 +2698,16 @@ body {
   z-index: 2;
 }
 
+.h-2 {
+  height: 150px;
+}
+
 .mt-1 {
   margin-top: -50px;
+}
+
+.mt-2 {
+  margin-top: 20px;
 }
 
 .svg-header {
